@@ -1,0 +1,187 @@
+:root {
+  --pink: #e52165;
+  --risin: #0d1137;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Staatliches";
+}
+
+/* let's get started */
+/* you can find the starter code in the description */
+
+.container {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    to right,
+    var(--pink) 0%,
+    transparent 30%,
+    transparent 70%,
+    var(--pink) 100%
+  );
+  height: 100vh;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  font-size: 7.5rem;
+  font-family: inherit;
+  color: var(--risin);
+  background-color: transparent;
+
+  position: relative;
+
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 0.5rem;
+}
+
+/* button #1 */
+.btn--1::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  width: 0;
+  height: 0.15rem;
+  background-color: var(--pink);
+  border-radius: 100%;
+
+  transition: all 0.5s cubic-bezier(0, -0.17, 0.53, 1.15);
+}
+
+.btn--1:hover::before {
+  width: 100%;
+}
+
+.btn--1::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 0;
+  height: 0.15rem;
+  background-color: var(--pink);
+  border-radius: 100%;
+
+  transition: all 0.5s cubic-bezier(0, -0.17, 0.53, 1.15);
+}
+
+.btn--1:hover::after {
+  width: 100%;
+}
+
+/* DONE */
+
+/* button #2 */
+.btn--2::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  border-top: 0.2rem solid var(--pink);
+  border-left: 0.2rem solid var(--pink);
+  border-radius: 1rem;
+  width: 120%;
+  height: 130%;
+  transition: all 0.5s;
+}
+
+.btn--2:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.btn--2::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  border-bottom: 0.2rem solid var(--pink);
+  border-right: 0.2rem solid var(--pink);
+  border-radius: 1rem;
+  width: 120%;
+  height: 130%;
+  transition: all 0.5s;
+}
+
+.btn--2:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+/* DONE */
+
+/* button #3 */
+.btn--3 {
+  border-top: 0.13rem solid var(--pink);
+  border-bottom: 0.13rem solid var(--pink);
+  letter-spacing: -0.4rem;
+
+  transition: all 0.5rem;
+}
+
+.btn--3:hover {
+  letter-spacing: 1rem;
+}
+
+/* DONE */
+
+/* button #4 */
+.btn--4::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  border-left: 0.2rem solid var(--pink);
+  border-top: 0.2rem solid var(--pink);
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.5s;
+}
+
+.btn--4:hover::before {
+  width: 120%;
+  height: 140%;
+}
+
+.btn--4::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  border-right: 0.2rem solid var(--pink);
+  border-bottom: 0.2rem solid var(--pink);
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.5s;
+}
+
+.btn--4:hover::after {
+  width: 120%;
+  height: 140%;
+}
+
+/* DONE */
+/* It's showtime. */
+/* If you want to see more content from me, please subscibe */
+/* JobeiriMedia */
